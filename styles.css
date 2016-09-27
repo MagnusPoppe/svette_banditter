@@ -1,0 +1,223 @@
+
+
+
+
+/** GENERELLE KNAPPER: **/
+button {
+    border: 2px solid black;
+    padding: 10px 15px 10px 15px;
+    background: none;
+    color: black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 3px;
+}
+button:hover {
+    border: 2px solid black;
+    padding: 10px 15px 10px 15px;
+    background: black;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.centermessage {
+    text-align: center;
+    position: fixed;
+    font-family: "Open Sans", Helvetica Neue, sans;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/** SKJEMA OG FONTER: **/
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-bottom: 2px solid cadetblue;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+select:hover
+{
+    border-bottom: 2px solid black;
+}
+
+input[type="text"],
+input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid black;
+    display: block !important;
+    background: white;
+    border-radius: 0;
+}
+select {
+    border: none;
+    border-bottom: 1px solid black;
+    background: white;
+    border-radius: 0;
+}
+h1, h2, h3, h4, h5, h6, p, form, label, input, div, td, th{
+    font-family: "Open Sans", Helvetica Neue, sans-serif;
+}
+
+h4 {
+    opacity: 0.87;
+}
+
+p, label, td, th {
+    opacity: 0.57;
+    font-size: 0.75em;
+}
+
+td {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+input[type="checkbox"] {
+    text-align: center;
+}
+
+
+
+
+/** INDEXSIDEN: **/
+.indexpage {
+    background: url("bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.indexpage div {
+    color: white;
+    max-width: 500px;
+    min-width: 320px;
+    margin: auto;
+    text-align:  center;
+
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.spec {
+    text-align: center;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.startbutton {
+    color: white;
+    background: none;
+}
+
+
+@media (min-width: 480px)
+{
+    main {
+        max-width: 700px;
+        margin: auto;
+        background-color: white;
+        margin-bottom: 40px;
+        padding: 50px !important;
+    }
+    header {
+        height: 500px;
+    }
+    section {
+        width: 100%;
+        padding: 40px 100px 100px 40px;
+        text-align: left;
+    }
+
+    #topinfo {
+        background-color: white;
+    }
+
+    th {
+        text-align: left;
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    form div div {
+        display: inline-block;
+    }
+    h4 {
+        font-size: 1.25em;
+    }
+}
+@media (max-width: 480px)
+{
+    main {
+        margin: 20px;
+    }
+    header {
+        height: 200px;
+    }
+    section {
+        margin: auto;
+    }
+
+    form div {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    form div div {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="email"], label {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    label {
+        display: block !important;
+        font-size: 1em;
+    }
+    h1, h4 {
+        text-align: center;
+    }
+    tr {
+        width: 320px;
+    }
+    td {
+        width: 140px;
+        margin-left: 10px;
+    }
+
+}
